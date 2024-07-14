@@ -1,5 +1,6 @@
 // src/Calendar.js
 import React from 'react';
+import PropTypes from 'prop-types'; // Импортируем PropTypes
 import './App.css';
 
 const daysOfWeek = ['Воскресенье', 'Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота'];
@@ -19,7 +20,7 @@ const Calendar = ({ date }) => {
   const startDayOfWeek = startOfMonth.getDay();
 
   const calendarDays = [];
-  let dayCounter = 1;
+  // let dayCounter = 1;
 
   // Previous month's days
   if (startDayOfWeek !== 0) {
@@ -117,6 +118,9 @@ const Calendar = ({ date }) => {
       </table>
     </div>
   );
+};
+Calendar.propTypes = {
+  date: PropTypes.instanceOf(Date).isRequired,
 };
 
 export default Calendar;

@@ -1,5 +1,6 @@
 // src/ShopItemFunc.js
 import React from 'react';
+import PropTypes from 'prop-types'; // Импортируем PropTypes
 import './App.css';
 
 const ShopItemFunc = ({ item }) => {
@@ -20,5 +21,15 @@ const ShopItemFunc = ({ item }) => {
     </div>
   );
 };
-
+// Прописываем PropTypes для компонента ShopItemFunc
+ShopItemFunc.propTypes = {
+  item: PropTypes.shape({
+    brand: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    descriptionFull: PropTypes.string.isRequired,
+    price: PropTypes.number.isRequired,
+    currency: PropTypes.string.isRequired
+  }).isRequired
+};
 export default ShopItemFunc;
