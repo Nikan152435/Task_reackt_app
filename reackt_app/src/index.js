@@ -1,12 +1,12 @@
 // index.js
 
-// Импортируем каждое приложение
+// Импртируем каждое приложение
 import React from 'react';
-import ReactDOM from 'react-dom';
-// import App from './App.js';
-import Calendar from './src/components/Calendar.js';
-import ShopItemClass from './src/components/ShopItemClass.js';
-import ShopItemFunc from './src/components/ShopItemFunc.js';
+import ReactDOM from 'react-dom/client';
+import Calendar from './components/Calendar';
+import ShopItemClass from './components/ShopItemClass';
+import ShopItemFunc from './components/ShopItemFunc';
+import './App.css'; // Импорт CSS файла
 
 const rootElement = document.getElementById('root');
 
@@ -23,7 +23,7 @@ const item = {
 const root = ReactDOM.createRoot(rootElement); // Создаем корневой элемент для рендера
 root.render(
   <React.StrictMode>
-    <div>
+    <div className='container'>
       <Calendar date={date} />
       <ShopItemClass item={item} />
       <ShopItemFunc item={item} />

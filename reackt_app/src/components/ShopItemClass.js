@@ -1,7 +1,7 @@
 // src/ShopItemClass.js
 import React, { Component } from 'react';
 import PropTypes from 'prop-types'; // Импортируем PropTypes
-import './App.css';
+import '../App.css';
 
 class ShopItemClass extends Component {
   render() {

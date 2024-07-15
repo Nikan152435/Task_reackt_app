@@ -1,7 +1,7 @@
 // src/ShopItemFunc.js
 import React from 'react';
 import PropTypes from 'prop-types'; // Импортируем PropTypes
-import './App.css';
+import '../App.css';
 
 const ShopItemFunc = ({ item }) => {
   return (

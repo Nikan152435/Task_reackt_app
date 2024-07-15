@@ -1,7 +1,7 @@
 // src/Calendar.js
 import React from 'react';
 import PropTypes from 'prop-types'; // Импортируем PropTypes
-import './App.css';
+import '../App.css';
 
 const daysOfWeek = ['Воскресенье', 'Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота'];
 const months = ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'];
